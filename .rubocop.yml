@@ -58,6 +58,8 @@ Style/Lambda:
 
 Metrics/AbcSize:
   Max: 30
+  Exclude:
+    - 'app/controllers/users/registrations_controller.rb'
 
 Metrics/BlockLength:
   Exclude:
@@ -65,6 +67,11 @@ Metrics/BlockLength:
 
 Metrics/CyclomaticComplexity:
   Max: 10
+
+Metrics/MethodLength:
+  Max: 12
+  Exclude:
+    - 'app/controllers/users/registrations_controller.rb'
 
 Layout/LineLength:
   Max: 160
